@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .hidden-options {
+            display: none;
+        }
+
+        .body {
+            background-color: black;
+            color: white;
+        }
+
+        .clase1 {
+            background-color: rgb(248, 248, 140);
+            width: 250px;
+        }
+
+        .clase2 {
+            background-color: rgb(248, 248, 140);
+            width: 70px;
+        }
+    </style>
+</head>
+
+<body class="body">
+    <form method="post" id="miFormulario">
+
+        <label for="name">Tu Nombre:</label>
+        <input type="text" id="name" name="user_name" class="clase1"/>
+
+        <label for="password">Tu Clave:</label>
+        <input type="password" id="password" name="password" class="clase2"/>
+        <br><br>
+
+        <label for="archivosAenviar">Archivos a enviar:</label>
+            <input name="manual" type="checkbox" />Manual de Html
+            <input name="programa" type="checkbox" />Programa Maphtis
+            <input name="archivo" type="checkbox" />Archivo de Ayuda
+        
+        <br><br>
+        <label for="edad">Tu Edad:</label>
+            <input name="edad" type="radio" />Menos de 20 años
+            <input name="edad" type="radio" />Entre 20 y 40 años
+            <input name="edad" type="radio" />Mas de 40 años
+        <br><br>
+
+        <label for="pregunta">Como encontraste mi página:</label>
+        <select>
+            <option value="opcion1">Me lo comento un amigo</option>
+            <option value="opcion2" selected>Por Internet</option>
+            <option value="opcion3">Vi la dirección en un foro</option>
+        </select>
+
+        <script>
+            document.getElementById('multipleSelect').addEventListener('click', function () {
+
+                optionsToShow.forEach(function (option) {
+                    option.style.display = 'block';
+                });
+
+                this.removeEventListener('click', arguments.callee);
+            });
+        </script>
+        <br><br>
+
+        <label for="comments">Tus comentarios:</label><br>
+        <textarea id="comments" name="user_comments" rows="7" cols="60"></textarea>
+        <br>
+        
+        <button type="submit">Enviar</button>
+        <input type="Reset" value="Borrar todo">
+
+    </form>
+</body>
+
+</html>

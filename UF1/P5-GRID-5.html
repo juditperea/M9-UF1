@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(6, 1fr);
+            grid-template-rows: repeat(9, 1fr);
+            width: 900px;
+            height: 500px;
+        }
+
+        .grid-item {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: black;
+            font-size: 24px;
+            height: 100%;
+            border: 7px solid black;
+        }
+        .rojo {
+            background-color: rgb(165, 32, 32);
+        }
+
+        .blanco {
+            background-color: white;
+        }
+
+        .azul2 {
+            background-color: blue;
+        }
+
+        .mostaza2 {
+            background-color: rgb(205, 188, 78);
+        }
+
+
+        .largered {
+            grid-column: span 2;
+            grid-row: span 9;
+            background-color: rgb(165, 32, 32);
+        }
+
+        .azul {
+            grid-column: span 3;
+            background-color: blue;
+        }
+
+        .mostaza {
+            grid-row: span 8;
+            background-color: rgb(205, 188, 78);
+        }
+
+        .largeyellow {
+            grid-column: span 3;
+            grid-row: span 7;
+            background-color: white;
+            text-align: right;
+            
+        }
+
+        .titulo {
+            font-weight: bolder;
+            font-size: 30px;
+        }
+        .div1 {
+            text-align: right;
+            margin-left: 70px;
+            margin-right: 20px;
+            margin-bottom: 40px;
+        }
+
+        .p1 {
+            font-size: 10px;
+            margin-left: 80px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="grid-container">
+        <div class="grid-item rojo"></div>
+        <div class="grid-item largered"></div>
+        <div class="grid-item azul"></div>
+        <div class="grid-item mostaza"></div>
+        <div class="grid-item largeyellow">
+            <div class="div1">
+            <h1 class="titulo">Piet Mondrian</h1>
+            <p class="p1">L'art de Mondrian era altament utòpic i estava preocupat per la recerca de valors i estètica universals.
+                El 1914 va proclamar: "L'art és superior a la realitat i no té cap relació directa amb la realitat.
+                Per acostar-se a l'espiritual en l'art, s'utilitzarà la realitat el menys possible, perquè la realitat
+                s'oposa a l'espiritual. Ens trobem en la presència d'un art abstracte. L'art hauria d'estar per 
+                sobre de la realitat, en cas contrari no tindria cap valor per a l'home". El seu art, però, sempre va 
+                romandre arrelat a la natura. </p>
+            </div>
+        </div>
+        <div class="grid-item blanco"></div>
+        <div class="grid-item azul2"></div>
+        <div class="grid-item mostaza2"></div>
+    </div>
+</body>
+
+</html>

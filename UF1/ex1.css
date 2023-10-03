@@ -1,0 +1,65 @@
+table thead tr th,
+table tbody tr td,
+table tbody tr th,
+table tfoot tr th{
+border: 1px solid black;
+}
+table {
+border-collapse: collapse;
+}
+p, h1, h2, #adicional p {
+text-align: left;
+max-width: 670px;
+word-wrap: break-word;
+}
+strong{
+    color:red;
+}
+td strong{
+    color:rgb(255, 211, 17)
+}
+caption{
+    color:rgb(46, 14, 253)
+}
+thead .especial{
+    color:rgb(255, 211, 17)
+}
+tbody th{
+    color:red;
+}
+tbody td{
+    color:rgb(41, 189, 41);
+}
+tbody .especial{
+    color:rgb(255, 211, 17)
+}
+tfoot{
+    color:red;
+}
+p a {
+    color:rgb(255, 50, 50);
+}
+a em {
+    color:rgb(46, 14, 253)
+}
+p .especial{
+    color:rgb(186, 33, 200)
+}
+#titulo{
+    color:rgb(63, 125, 127);
+}
+#subtitulo{
+    color:rgb(46, 14, 253);
+}
+.destacado{
+    color:rgb(255, 211, 17);
+}
+#adicional a {
+    color:rgb(41, 189, 41);
+}
+#adicional p {
+    color:rgb(171, 169, 48);
+}
+#adicional #especial{
+    color:rgb(255, 89, 216)
+}

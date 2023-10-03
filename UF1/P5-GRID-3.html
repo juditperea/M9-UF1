@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Grid</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+    <style> 
+        .grid-container {
+        display: grid;
+        grid-template-areas: 
+            "long long long"
+            "tall short1 short2"
+            "tall short3 short4";
+        gap: 1px;  
+        padding: 10px;
+        width: 400px; 
+        height: 150px; 
+        }
+
+        .grid-item {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #405c70; 
+        color: white;
+        font-size: 18px; 
+        height: 100%; 
+        }
+
+        .long {
+        grid-area: long;
+        }
+
+        .tall {
+        grid-area: tall;
+        }
+
+        .short1 {
+        grid-area: short1;
+        }
+        .short2 {
+        grid-area: short2;
+        }
+        .short3 {
+        grid-area: short3;
+        }
+        .short4 {
+        grid-area: short4;
+        }
+    </style>
+</head>
+<body>
+    <div class="grid-container">
+        <div class="grid-item long"> celda 1</div>
+        <div class="grid-item tall"> celda 2</div>
+        <div class="grid-item short1"> celda 3</div>
+        <div class="grid-item short2"> celda 4</div>
+        <div class="grid-item short3"> celda 5</div>
+        <div class="grid-item short4"> celda 6</div>
+    </div>
+</body>
+</html>
